@@ -1,0 +1,46 @@
+[gd_scene load_steps=9 format=3 uid="uid://cwbce6csbhpi"]
+
+[ext_resource type="Script" path="res://rooms/room.gd" id="1_jimbl"]
+[ext_resource type="Texture2D" uid="uid://cdjy48gin7c24" path="res://assets/rooms/first_episode/angela_interior/background.png" id="2_sqijh"]
+[ext_resource type="PackedScene" uid="uid://t1hfmpybqbst" path="res://entities/first_episode/angela_interior/baby_things.tscn" id="3_k6mcp"]
+[ext_resource type="PackedScene" uid="uid://bba4d4q1arhoo" path="res://entities/first_episode/angela_interior/crucifix.tscn" id="4_0qywl"]
+[ext_resource type="PackedScene" uid="uid://c7ektt4g2vlwy" path="res://entities/first_episode/angela_interior/picture_frame.tscn" id="5_mbn48"]
+[ext_resource type="PackedScene" uid="uid://c37imbvaplutq" path="res://entities/first_episode/angela_interior/stairs.tscn" id="6_4dqoc"]
+[ext_resource type="PackedScene" uid="uid://b3e37mspgakta" path="res://entities/first_episode/angela_interior/old_boxes.tscn" id="7_g0gyu"]
+[ext_resource type="PackedScene" uid="uid://jvnkvpf38mln" path="res://entities/first_episode/angela_interior/angela_door.tscn" id="8_u68x5"]
+
+[node name="AngelaInterior" type="Node2D"]
+script = ExtResource("1_jimbl")
+
+[node name="PanelContainer" type="PanelContainer" parent="."]
+custom_minimum_size = Vector2(1280, 720)
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="TextureRect" type="TextureRect" parent="PanelContainer"]
+layout_mode = 2
+texture = ExtResource("2_sqijh")
+expand_mode = 1
+
+[node name="BabyThings" parent="." instance=ExtResource("3_k6mcp")]
+position = Vector2(459, 169)
+scale = Vector2(0.118604, 0.118604)
+
+[node name="Crucifix" parent="." instance=ExtResource("4_0qywl")]
+position = Vector2(803, 116)
+scale = Vector2(0.121975, 0.121975)
+
+[node name="PictureFrame" parent="." instance=ExtResource("5_mbn48")]
+position = Vector2(357, 336)
+scale = Vector2(0.105642, 0.105642)
+
+[node name="Stairs" parent="." instance=ExtResource("6_4dqoc")]
+position = Vector2(645, 363)
+scale = Vector2(0.673531, 0.673531)
+
+[node name="OldBoxes" parent="." instance=ExtResource("7_g0gyu")]
+position = Vector2(472, 352)
+scale = Vector2(0.147914, 0.147914)
+
+[node name="RoomDoor" parent="." instance=ExtResource("8_u68x5")]
+position = Vector2(1120, 475)

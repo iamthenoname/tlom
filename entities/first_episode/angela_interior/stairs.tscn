@@ -1,0 +1,20 @@
+[gd_scene load_steps=3 format=3 uid="uid://c37imbvaplutq"]
+
+[ext_resource type="Script" path="res://entities/scripts/room_entity.gd" id="1_d2uim"]
+[ext_resource type="Texture2D" uid="uid://bdqw1eognjptj" path="res://assets/objects/first_episode/angela_interior/stairs.png" id="2_u16jj"]
+
+[node name="Stairs" type="Node2D"]
+script = ExtResource("1_d2uim")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_u16jj")
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_left = -960.0
+offset_top = -540.0
+offset_right = -677.0
+offset_bottom = 323.0
+
+[connection signal="gui_input" from="Control" to="." method="_on_input"]

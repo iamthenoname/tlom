@@ -1,7 +1,7 @@
 [gd_scene load_steps=9 format=3 uid="uid://cajkchbl1wq0w"]
 
 [ext_resource type="Script" path="res://rooms/room.gd" id="1_qs71t"]
-[ext_resource type="Texture2D" uid="uid://dxhmx6l7l3et5" path="res://assets/rooms/debug_episode/test.png" id="1_sx41r"]
+[ext_resource type="Texture2D" uid="uid://cqr0l12j31235" path="res://assets/rooms/debug_episode/test.png" id="1_sx41r"]
 [ext_resource type="PackedScene" uid="uid://ba1ux1m0nlgno" path="res://entities/debug_episode/crime_scene/dead_body.tscn" id="2_svtv6"]
 [ext_resource type="PackedScene" uid="uid://b6fhwwjirof0p" path="res://entities/debug_episode/crime_scene/knife.tscn" id="3_nj2o6"]
 [ext_resource type="PackedScene" uid="uid://col7qcqw8dqig" path="res://entities/debug_episode/crime_scene/safe.tscn" id="4_c3jwt"]

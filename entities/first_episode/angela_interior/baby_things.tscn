@@ -1,0 +1,20 @@
+[gd_scene load_steps=3 format=3 uid="uid://t1hfmpybqbst"]
+
+[ext_resource type="Script" path="res://entities/scripts/room_entity.gd" id="1_k4fgi"]
+[ext_resource type="Texture2D" uid="uid://b053fg56n8xsm" path="res://assets/objects/first_episode/angela_interior/baby_things.png" id="2_ybn6d"]
+
+[node name="BabyThings" type="Node2D"]
+script = ExtResource("1_k4fgi")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_ybn6d")
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_left = -731.0
+offset_top = -484.0
+offset_right = 802.0
+offset_bottom = 464.0
+
+[connection signal="gui_input" from="Control" to="." method="_on_input"]

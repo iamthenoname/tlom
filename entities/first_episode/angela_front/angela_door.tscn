@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://bh41oeg0oi0rw"]
 
 [ext_resource type="Script" path="res://entities/scripts/room_door.gd" id="1_huvrh"]
-[ext_resource type="Texture2D" uid="uid://cts8y6mmgjlna" path="res://assets/objects/first_episode/angela_interior/angela_door.png" id="2_3v53l"]
+[ext_resource type="Texture2D" uid="uid://ddmm8ibu3jpfl" path="res://assets/objects/first_episode/angela_interior/angela_door.png" id="2_3v53l"]
 
 [node name="AngelaDoor" type="Node2D"]
 script = ExtResource("1_huvrh")

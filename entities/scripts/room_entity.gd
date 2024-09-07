@@ -10,3 +10,11 @@ func _on_input(event: InputEvent) -> void:
 
 	if event.button_index == MOUSE_BUTTON_LEFT:
 		looked_at.emit(self.name)
+
+
+func _on__input(event: InputEvent) -> void:
+	pass # Replace with function body.
+
+
+func _on_control_gui_input(event: InputEvent) -> void:
+	pass # Replace with function body.

@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://5ol31j0o40ye"]
+
+[ext_resource type="Script" path="res://episodes/episode.gd" id="1_lmv3j"]
+
+[node name="FirstEpisode" type="Node"]
+script = ExtResource("1_lmv3j")

@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://uklems60d5b5"]
+
+[ext_resource type="Script" path="res://episodes/episode.gd" id="1_w3ah7"]
+
+[node name="DebugEpisode" type="Node"]
+script = ExtResource("1_w3ah7")
+starting_room = "res://rooms/debug_episode/crime_scene.tscn"
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]

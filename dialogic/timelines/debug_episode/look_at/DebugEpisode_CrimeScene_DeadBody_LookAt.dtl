@@ -1,0 +1,9 @@
+Trese: A dead body.
+Trese: Looks morbid.
+label Start
+Trese: What should I do?
+- Look at it some more
+	Trese: It looks disgusting.
+	jump Start
+- Leave
+	[end_timeline]

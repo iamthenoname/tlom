@@ -1,0 +1,60 @@
+[gd_scene load_steps=9 format=3 uid="uid://cajkchbl1wq0w"]
+
+[ext_resource type="Script" path="res://rooms/room.gd" id="1_qs71t"]
+[ext_resource type="Texture2D" uid="uid://dxhmx6l7l3et5" path="res://assets/rooms/debug_episode/test.png" id="1_sx41r"]
+[ext_resource type="PackedScene" uid="uid://ba1ux1m0nlgno" path="res://entities/debug_episode/crime_scene/dead_body.tscn" id="2_svtv6"]
+[ext_resource type="PackedScene" uid="uid://b6fhwwjirof0p" path="res://entities/debug_episode/crime_scene/knife.tscn" id="3_nj2o6"]
+[ext_resource type="PackedScene" uid="uid://col7qcqw8dqig" path="res://entities/debug_episode/crime_scene/safe.tscn" id="4_c3jwt"]
+[ext_resource type="PackedScene" uid="uid://boba2xkjkrwep" path="res://entities/debug_episode/crime_scene/picture_frame.tscn" id="5_5sc0k"]
+[ext_resource type="PackedScene" uid="uid://ctbao21ftii2q" path="res://entities/debug_episode/crime_scene/safe_lock.tscn" id="6_5nl7g"]
+[ext_resource type="PackedScene" uid="uid://6igo6h0sr0e2" path="res://entities/debug_episode/general/door_to_map.tscn" id="7_sjo3l"]
+
+[node name="CrimeScene" type="Node2D"]
+script = ExtResource("1_qs71t")
+
+[node name="PanelContainer" type="PanelContainer" parent="."]
+custom_minimum_size = Vector2(1280, 720)
+offset_right = 1280.0
+offset_bottom = 720.0
+
+[node name="TextureRect" type="TextureRect" parent="PanelContainer"]
+layout_mode = 2
+texture = ExtResource("1_sx41r")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="DeadBody" parent="." instance=ExtResource("2_svtv6")]
+position = Vector2(610, 577)
+scale = Vector2(5.32, 5.32)
+
+[node name="Knife" parent="." instance=ExtResource("3_nj2o6")]
+position = Vector2(776, 646)
+scale = Vector2(2.24, 2.24)
+
+[node name="Safe" parent="." instance=ExtResource("4_c3jwt")]
+position = Vector2(583, 425)
+scale = Vector2(4.11589, 4.11589)
+
+[node name="PictureFrame" parent="." instance=ExtResource("5_5sc0k")]
+position = Vector2(268, 533)
+scale = Vector2(2.2, 2.2)
+
+[node name="SafeLock" parent="." instance=ExtResource("6_5nl7g")]
+position = Vector2(720, 431)
+scale = Vector2(2.64541, 2.64541)
+
+[node name="DoorToMap" parent="." instance=ExtResource("7_sjo3l")]
+position = Vector2(937, 358)
+scale = Vector2(5.06878, 5.06878)
+destination = "res://rooms/debug_episode/map.tscn"
+
+[connection signal="looked_at" from="DeadBody" to="." method="_on_looked_at"]
+[connection signal="collected" from="Knife" to="." method="_on_collected"]
+[connection signal="looked_at" from="Knife" to="." method="_on_looked_at"]
+[connection signal="looked_at" from="Safe" to="." method="_on_looked_at"]
+[connection signal="collected" from="PictureFrame" to="." method="_on_collected"]
+[connection signal="looked_at" from="PictureFrame" to="." method="_on_looked_at"]
+[connection signal="inspected" from="SafeLock" to="." method="_on_inspected"]
+[connection signal="looked_at" from="SafeLock" to="." method="_on_looked_at"]
+[connection signal="looked_at" from="DoorToMap" to="." method="_on_looked_at"]
+[connection signal="went_to" from="DoorToMap" to="." method="_on_went_to"]

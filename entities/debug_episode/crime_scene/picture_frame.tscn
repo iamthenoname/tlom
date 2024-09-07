@@ -1,0 +1,20 @@
+[gd_scene load_steps=3 format=3 uid="uid://boba2xkjkrwep"]
+
+[ext_resource type="Script" path="res://entities/scripts/room_evidence.gd" id="1_obc50"]
+[ext_resource type="Texture2D" uid="uid://ddejvplx0sh6i" path="res://assets/objects/debug_episode/picture_frame.png" id="2_dlduw"]
+
+[node name="PictureFrame" type="Node2D"]
+script = ExtResource("1_obc50")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_dlduw")
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_left = -20.0
+offset_top = -25.0
+offset_right = 19.0
+offset_bottom = 23.0
+
+[connection signal="gui_input" from="Control" to="." method="_on_input"]

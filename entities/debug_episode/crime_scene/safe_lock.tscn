@@ -1,0 +1,21 @@
+[gd_scene load_steps=3 format=3 uid="uid://ctbao21ftii2q"]
+
+[ext_resource type="Script" path="res://entities/scripts/room_puzzle.gd" id="1_lq5wv"]
+[ext_resource type="Texture2D" uid="uid://dh17gaxbkp5jh" path="res://assets/objects/debug_episode/safe_button.png" id="2_wgfbe"]
+
+[node name="SafeLock" type="Node2D"]
+script = ExtResource("1_lq5wv")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_wgfbe")
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_left = -20.0
+offset_top = -25.0
+offset_right = 13.0
+offset_bottom = 22.0
+scale = Vector2(1.24, 1)
+
+[connection signal="gui_input" from="Control" to="." method="_on_input"]

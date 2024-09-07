@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://filvknc38abx"]
+
+[ext_resource type="Script" path="res://rooms/room.gd" id="1_cbfsh"]
+
+[node name="Map" type="Node2D"]
+script = ExtResource("1_cbfsh")

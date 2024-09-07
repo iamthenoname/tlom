@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://yb2jy8an3hho"]
+
+[ext_resource type="Script" path="res://rooms/room.gd" id="1_2sgcl"]
+
+[node name="AngelaFront" type="Node2D"]
+script = ExtResource("1_2sgcl")

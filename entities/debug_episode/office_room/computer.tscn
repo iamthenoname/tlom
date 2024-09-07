@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=3 uid="uid://bqrjoparjxu7x"]
+
+[ext_resource type="Script" path="res://scripts/room_object.gd" id="1_tricb"]
+[ext_resource type="Texture2D" uid="uid://cjnhvh5wc114h" path="res://assets/episode_debug/laptop.png" id="2_65hn7"]
+
+[node name="Laptop" type="Area2D"]
+script = ExtResource("1_tricb")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_65hn7")

@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://dfoj0t72e53s4"]
+
+[ext_resource type="Script" path="res://scripts/room_object.gd" id="1_umism"]
+[ext_resource type="Texture2D" uid="uid://dolpkqigd1hj0" path="res://assets/episode_debug/note.png" id="2_wb613"]
+
+[node name="Note" type="Area2D"]
+script = ExtResource("1_umism")
+description = "A note from one of the employees to the victim."
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_wb613")

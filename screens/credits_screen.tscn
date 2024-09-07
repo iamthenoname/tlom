@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://bwv02e8gqydiu"]
+
+[ext_resource type="Script" path="res://screens/scripts/credits_screen.gd" id="1_owxxm"]
+
+[node name="CreditsScreen" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_owxxm")

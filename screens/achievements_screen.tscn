@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://bln0urtifhh4"]
+
+[ext_resource type="Script" path="res://screens/scripts/achievements_screen.gd" id="1_yde0w"]
+
+[node name="AchievementsScreen" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_yde0w")

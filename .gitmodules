@@ -1,0 +1,3 @@
+[submodule "assets/dialogic"]
+	path = assets/dialogic
+	url = https://github.com/dialogic-godot/dialogic
